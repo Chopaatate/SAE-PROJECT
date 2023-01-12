@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html {
+        box-sizing: border-box;
+        font-size: 1rem;
+        font-family: 'Roboto';
+        height: 100%;
+}
+
+body {
+    margin: 0%;
+}
+/* Header / Nav de la page */
+
+.menu {
+    background-color: #FF7675;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.barres_menu {
+    padding-left: 4%;
+}
+
+.titre {
+    color : white;
+    flex-grow : 1;
+    align-self : left;
+    padding-left: 20px;
+}
+
+.poubelle_blanche {
+    padding-right: 5%;
+}
+
+/* Main Tache en cours (Projet tutoré) */
+
+.main {                     /*En cours*/
+    display: flex;
+    flex-direction: column;
+    margin-top: 78px;
+    gap: 27px;
+}
+
+/*taches*/
+
+.item_generalbox {
+    height: 100%;
+}
+
+.items {
+    border: 0px solid #BDBDBD;
+    border-top-width: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /*padding-left: 16px;*/
+    column-gap: 16px;
+    min-height: 48px;
+    max-height: 48px;
+    flex-grow: 1;
+}
+
+.items:last-child {
+    border-bottom-width: 1px;
+}
+
+/*Boutons*/
+
+.button_tache {
+    width: 20px;
+    height: 20px;
+    background-image: url(assets/circle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button_ajouter {
+    width: 20px;
+    height: 20px;
+    background-image: url(assets/plus.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nom_tache {
+    margin: 0%;
+    font-size: 0.8rem;
+}
+.details_tache {
+    color: rgba(102, 102, 102, 1);
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    column-gap: 8px;
+    list-style: none;
+    font-size: 0.75rem;
+    padding: 0%;
+    margin: 0%;
+}
+
+.details_tache li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+.items #Item5 {
+    border: 0px solid #BDBDBD;
+    border-top-width: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    /*padding-left: 16px;*/
+    column-gap: 16px;
+    min-height: 48px;
+    max-height: 48px;
+}

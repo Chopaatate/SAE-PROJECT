@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign-in</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="page-container">
+          <input id="sign-in" class="tab" type="radio" name="tab" checked />
+          <label class="tab-label" for="sign-in">SIGN IN</label>
+          <input id="sign-up" class="tab" type="radio" name="tab" />
+          <label class="tab-label" for="sign-up">SIGN UP</label>
+          
+          <div class="login-page">
+            <div class="sign-in-page">
+              <label class="control" for="username">ADRESSE E-MAIL</label>
+              <input id="username" class="input" type="email" autocomplete="off"/>
+
+              <label class="control" for="password">MOT DE PASSE</label>
+              <input id="password" class="input" type="password" />
+              
+              <button class="input" type="submit">Connexion</button>
+
+              <a href="index.html" class="links">J'ai oublié mon mot de passe</a>
+              <label href="#" class="links" id="membre" for="sign-up"> Pas encore de compte ? Inscrivez vous !</label>
+
+            </div>
+      
+            <div class="sign-up-page">
+              <label class="control" for="new-username">NOM D'UTILISATEUR</label>
+              <input id="new-username" class="input" type="text" autocomplete="off" />
+
+              <label class="control" for="new-password">MOT DE PASSE</label>
+              <input id="new-password" class="input" type="password" />
+
+              <label class="control" for="repeat-password">REPETER LE MOT DE PASSE</label>
+              <input id="repeat-password" class="input" type="password" />
+
+              <label class="control" for="new-email">ADRESSE E-AMIL</label>
+              <input id="new-email" class="input" type="email" autocomplete="off" />
+
+              <button class="input">S'INSCRIRE</button>
+              <label class="links" id="membre" for="sign-in">Déjà membre ?</label>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
